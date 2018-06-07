@@ -1,0 +1,19 @@
+Algunas herramientas:
+1. virtualenv
+2. virtualenvwrapper
+3. pyenv
+4. tox
+5. pipenv
+
+instalación virtualenv:
+    virtualenv -p python3 .venv
+    source .venv/bin/activate
+
+Prototype:
+    . leo un csv.
+    . recibo country y categoria
+    . devuelvo la media y la variaciación estandard de precios.
+
+Ejercicio:
+    - cómo resuelvo que use una entrada de datos alternativa.
+    - Filtrar al leer el archivo para no tener todo en memoria.
