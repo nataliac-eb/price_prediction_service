@@ -5,9 +5,11 @@ Algunas herramientas:
 4. tox
 5. pipenv
 
-instalación virtualenv:
+instalación virtualenv: dentro de la carpeta principal
     virtualenv -p python3 .venv
     source .venv/bin/activate
+    desactivar: deactivate
+    ipython3: call iphyton
 
     with pipenv: https://docs.pipenv.org/
     > pipenv --three (instala python3)
@@ -55,3 +57,13 @@ pipfile https://github.com/pypa/pipfile
 
 repo-eng-training: https://github.com/eventbrite/eng_training_program
 dunders: https://github.com/vakila/dunders (charla python)
+python-patterns: https://github.com/faif/python-patterns/
+
+Next class: In a multiple inherited subclassm, how can we know the MRO being applied?
+
+TDD:
+
+    Es importante mockear servicios externos o funcionalidades externas cuando hacemos test unitarios
+sino seguimos probando las mismas cosas.
+    Programar pensando en unidades(funcionalidades).
+    Un buen unit test hace un único asset.

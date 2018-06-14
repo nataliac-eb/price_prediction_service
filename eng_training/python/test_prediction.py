@@ -1,9 +1,9 @@
 import statistics
-import unittest
+from unittest import TestCase
 
 from prediction import price
 
-class test_prediction():
+class test_prediction(TestCase):
 
     def set_up():
         self.country = "US"
