@@ -9,11 +9,49 @@ instalación virtualenv:
     virtualenv -p python3 .venv
     source .venv/bin/activate
 
+    with pipenv: https://docs.pipenv.org/
+    > pipenv --three (instala python3)
+    > pipenv install Django (instala librerias)
+    genera un entorno virtual en el directorio raíz, tiene la inteligencia de activarlo cuando direccionas
+    ese directorio.
+
 Prototype:
-    . leo un csv.
+    . leo un csv. https://docs.python.org/2/library/csv.html
     . recibo country y categoria
-    . devuelvo la media y la variaciación estandard de precios.
+    . devuelvo la media y la variaciación estandard de precios. https://docs.python.org/3/library/statistics.html#statistics.mean
 
 Ejercicio:
     - cómo resuelvo que use una entrada de datos alternativa.
     - Filtrar al leer el archivo para no tener todo en memoria.
+
+context managers:
+    - los usamos con los features flag. Switches
+    - pueden usarse como decoradores para encapsular una función entera.
+    lib: https://docs.python.org/3/library/contextlib.html
+    - Cómo podemos usar un context manager como un decorador.
+
+Siempre es una buena idea leer Python Standard Libraries.
+    https://docs.python.org/3/library/index.html
+
+Rendimientos:
+    $  python3 -m timeit -s "import math" -c "math.sqrt(2)"
+    $  python3 -m timeit -s "from math import sqrt" -c "sqrt(2)" # demora mucho menos
+Why? Para python todos son objetos que trata como diccionarios.
+
+locals(): devuelve las variables definidas en la función.
+globals(): agrega a las variable locales el objeto actual.
+
+THIRD PARTY LIBRARIES:
+    - click: http://click.pocoo.org/5/
+    - requests: http://docs.python-requests.org/en/master/
+    - django: https://www.djangoproject.com/
+    - six: https://pypi.org/project/six/
+todo lo que esta en requirements es third party.
+
+Next class: Object Oriented Programming / TDD
+
+requeriments: https://pip.readthedocs.io/en/1.1/requirements.html
+pipfile https://github.com/pypa/pipfile
+
+repo-eng-training: https://github.com/eventbrite/eng_training_program
+dunders: https://github.com/vakila/dunders (charla python)
