@@ -14,7 +14,9 @@ def get_prediction(country_code, event_category_id):
     :Returns:
     Dictionary with 'mean' and 'standard_deviation' as keys and floats as values.
     """
+    # using context manager: i don't need to close the file.
     with open(CSV_FILE, 'rt') as csvprices:
+        # as default takes the first row as the header.
         prices = list(csv.reader(csvprices, delimiter=","))
 
         values=[]
@@ -31,6 +33,7 @@ def get_prediction(country_code, event_category_id):
 
 
 if __name__ == '__main__':
+    # country, category_id = sys.argv[1:3]
     country = str(sys.argv[1])
     category_id = str(sys.argv[2])
     print("for", country, category_id)
