@@ -3,7 +3,7 @@ from unittest import TestCase
 
 from prediction import price
 
-class test_prediction(TestCase):
+class test_prediction(TestCaset):
 
     def set_up():
         self.country = "US"

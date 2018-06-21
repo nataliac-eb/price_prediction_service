@@ -67,3 +67,21 @@ TDD:
 sino seguimos probando las mismas cosas.
     Programar pensando en unidades(funcionalidades).
     Un buen unit test hace un único asset.
+
+Generators:
+    Destination mirar -> yield_all_events()
+    Si el método tiene un yield ya es un generador.
+    Python 3: range devuelve un generator no más una lista.
+    www.dabeaz.com
+    https://medium.freecodecamp.org/how-and-why-you-should-use-python-generators-f6fb56650888
+
+Ejemplo:
+    lista = [x for x in range(0,100,2)] # genera una lista
+    gen = (x for x in range(0,100,2)) # genera un generador
+
+    Un generator no tiene longitud, no podemos preguntar len() y su valor de verdad es siempre true.
+    Cada vez que le pregunto por un dato del generator le quito el elemento, puede tirar error al finalizar.
+    range, map, filter siempre devuelve un generator.
+
+PROFILING:
+    
